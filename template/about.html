@@ -1,0 +1,61 @@
+
+
+{% extends "index.html" %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>about page</title>
+    <link rel="stylesheet" href="{% static "about-page.css" %}">
+</head>
+<body>
+    <div class="container">
+        <div class="about-me">
+            <h1><u>About Me :-</u></h1>   
+            Hello! I'm <strong>Nithin</strong>, a passionate developer specializing in <strong>Python programming, Frontend Development, and Backend Development</strong>. I focus on creating engaging and high-quality digital experiences. I'm currently looking for opportunities to work on real-world projects and grow as a developer.
+        </div>
+        <div class="about-img">
+            <img src="{% static "images/nithin_profile.jpeg" %}" alt="Your Name" class="profile-img"/>
+        </div>
+        {% comment %} <h2>Skills & Expertise</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li>🔹 Web Development (HTML, CSS, JavaScript, React)</li>
+            <li>🔹 UI/UX Design</li>
+            <li>🔹 Graphic Design & Branding</li>
+            <li>🔹 Content Writing & SEO</li>
+        </ul> {% endcomment %}
+    </div>
+    <div class="container">
+        <div class="about-journey">
+            <h1>My Journey</h1>
+            <p>I recently graduated with a degree in <strong>Bachelor of Computer Applications BCA (Data Science)</strong> and have been honing my skills through personal projects, internship. I'm passionate about learning new technologies and eager to work on real-world projects to grow as a <strong>Python Programming,Frontend and Backend Development</strong>.</p>
+         </div>
+        <div class="about-links">
+            <h2>Let's Connect</h2>
+            <div class="social-links">
+                <a href="https://github.com/Nithinreddy939" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/dhalavai-nithin-77752633a/" target="_blank">LinkedIn</a> |
+                <a href="mailto:your.email@example.com">Email Me</a>
+            </div>
+        </div>
+    </div>
+    
+    {% endblock content %}
+</body>
+</html>
+
+
+{% comment %} 
+<div class="about-journey">
+    <h2>My Journey</h2>
+    <p>I recently graduated with a degree in <strong>Bachelor of Computer Applications BCA (Data Science)</strong> and have been honing my skills through personal projects, internship. I'm passionate about learning new technologies and eager to work on real-world projects to grow as a <strong>Python Programming,Frontend and Backend Development</strong>.</p>
+ </div>
+<div class="about-links">
+    <h2>Let's Connect</h2>
+    <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> |
+        <a href="mailto:your.email@example.com">Email Me</a>
+    </div>
+</div> {% endcomment %}

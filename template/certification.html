@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "certifications.css" %}">
+</head>
+<body>
+    <section class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4" style="margin-left:25px"><u>Certifications</u> :-</h2>
+        <ul class="space-y-4">
+            <li class="border-l-4 border-blue-500 pl-4">
+                <h3 class="text-lg font-semibold">Python Fullstack Development (Internship)</h3>
+                <p class="text-gray-600">Issued by Sattva InfoTech, Tirupati | <span class="italic">May 2024</span> </p>
+                <h3>cetificate_pdf :<a href="https://drive.google.com/file/d/11KrHYC0_D2_M5eoYeGRPTsEFSjL7PeiL/view?usp=drive_link">link</a></h3>
+                <h3><u>Description :</u></h3>
+                <p>Earned a Python Full Stack Developer Certification from SattvaInfoTech, <br>where I developed real-world applications using Django, React.js, and REST APIs. <br>r Successfully built and deployed multiple full-stack projects with database integration.</p>
+            </li>
+            <li class="border-l-4 border-green-500 pl-4">
+                <h3 class="text-lg font-semibold"> Data Analyst-Power Bi</h3>
+                <p class="text-gray-600">Issued by Sattva InfoTech, Tirupati | <span class="italic"> December 2023</span></p>
+                <h3>cetificate_pdf :<a href="https://drive.google.com/file/d/12cnUDS5gATMABUtYIg54yaYO6wftOJqm/view?usp=drive_link">link</a></h3>
+                <h3><u>Description :</u></h3>
+                <p> During my internship, I worked on data analysis projects using Power BI, <br>creating reports and dashboards to help with business decisions.</p>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
+
+{% endblock content %}

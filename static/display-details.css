@@ -1,0 +1,14 @@
+.displaying_data{
+    border-style: none;
+}
+.displaying_data:hover{
+    background-color: #34485d;
+    backdrop-filter: blur(10px);
+    transition:linear 0.2s;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-top: white 3px solid;
+    border-bottom: white 3px solid;
+    padding: 8px 15px;
+}
+ 

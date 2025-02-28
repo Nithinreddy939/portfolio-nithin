@@ -1,0 +1,17 @@
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,500px));
+       /* padding: 20px; */
+    justify-content: space-around;
+}
+.project{
+    padding: 25px;
+}
+.project:hover{
+    background-image: url(https://i.pinimg.com/736x/d2/28/c3/d228c3529d43ec29d0f110747deba829.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: linear 2s;
+    border-radius: 30px;
+}

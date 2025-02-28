@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Displaying Details</title>
+    <link rel="stylesheet" href="{% static "display-details.css" %}">
+</head>
+<body>
+    <h1 style="text-align:center "><u>Displaying Details</u></h1>
+    <h2 style="text-align:center ">If you want access the Details of any person. <br>please click below names</h2>
+   <div >
+        <table cellspacing="10" align="center" transition="all 0.3s ease">
+            <tbody >
+                {% for i in data %}
+                    <tr>
+                        <td class="displaying_data" style="text-align :center"><a href="{% url "get_persondetails" i.username %}">{{i.username}}</a></td>
+                     
+                    </tr>
+                {% endfor %}
+            </tbody>    
+            
+        </table>
+        <button class="btn" style="text-align:center"><a href="{% url "index" %}">Home</a></button>
+    </div>
+</body>
+</html>
+
+
+{% endblock content %}
+
+

@@ -1,0 +1,36 @@
+{% extends "index.html" %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'project.css' %}">
+</head>
+<body>
+    <h2 style="margin-left:20px"><u>Projects</u> :-</h2>
+    <div class="project-container">
+        <div class="project">
+            <h3>Speech Recognition</h3>
+            <p style="text-align: justify;"><b><u>Description :-</u></b> speech recognition in Python, you can use the speech_recognition library. After installing the library using pip install SpeechRecognition, you can write a simple script to capture audio from a microphone and convert it into text. The script uses Google's speech-to-text API to process the audio. It first listens for speech and then attempts to recognize the spoken words. If successful, it prints the recognized text; otherwise, it handles errors such as unclear speech or service issues. This approach offers a straightforward way to integrate speech-to-text functionality into your Python applications..</p>
+            <a href="https://github.com/Nithinreddy939/siri" target="_blank">View Project</a>
+        </div>
+
+        <div class="project">
+            <h3><u>Personal Portfolio</u> :-</h3>
+            <p>I developed my personal portfolio using Django, HTML, and CSS to showcase my projects, skills, and experience in web development. The portfolio features a clean and responsive design, ensuring a seamless user experience. With Django handling the backend, it allows for dynamic content management, while HTML and CSS provide a visually appealing and structured layout. This project reflects my passion for both frontend and backend development, demonstrating my ability to build functional and aesthetically pleasing web applications</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+
+        {% comment %} <div class="project">
+            <h3>Marketing Analytics</h3>
+            <p>Designed a data model to track campaign performance using Power BI.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div> {% endcomment %}
+
+    </div>
+</body>
+</html>
+{% endblock content %}

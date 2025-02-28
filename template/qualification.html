@@ -1,0 +1,42 @@
+{% extends "index.html" %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'qualification.css' %}">
+</head>
+<body>
+    <h2 style="margin-left:25px"><u>Qualifications</u> :-</h2>
+    <div class="qualification-section">
+        <div class="qualification">
+            <h2>Bachelor of Computer Application (Data Science)</h2>
+            <p>Sri Venkateswara University, Tirupati. 2021 - 2024</p>
+            <p><h3><u>CGPA :</u> 7.1 %</h3></p>           
+            <p><u>Description: </u> During my graduation, I learned the fundamentals of Python, Java, and Data Science. This included coursework in programming, data analysis, machine learning, and database management.</p>
+            
+        </div>
+
+        <div class="qualification">
+            <h2>Intermediate (MPC)</h2>
+            <p>Vikram Junior College, Sri kalahasthi. 2019 - 2021</p>
+            <p><h3><u>CGPA :</u> 59.6 %</h3> </p>
+            {% comment %} <p><h3><u>Marks :</u>596</h3> </p> {% endcomment %}
+        </div>
+
+        <div class="qualification">
+            <h2 style="text-align:center">SSC</h2>
+            <p>Z.P.High School, Ragigunta. 2018 - 2019</p>
+            <p><h3><u>CGPA :</u> 8.5 %</h3> </p>
+        </div>
+
+    </div>
+</body>
+</html>
+{% endblock content %}
+
+
+

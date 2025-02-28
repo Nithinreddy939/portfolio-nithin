@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="{% static "index_page.css" %}">
+</head>
+<body>
+    {% include "navbar.html" %}
+    {% block content %}
+    <div class="home-content">
+        <header>
+            <h1 class="h1">Hi, I'm Nithin</h1>
+            <h3>Python Developer | Web Designer | Backend Developer </h3>
+            <a href="https://drive.google.com/file/d/10iqsQZwNzTc7FryRZxgQ70YcYxwNY-tJ/view?usp=drive_link" class="btn">Resume</a>
+        </header>
+        <div class="home-logo">
+            <img src="https://i.pinimg.com/736x/b1/f9/9d/b1f99d468e5b2626b5676531e7f28285.jpg" alt="Logo">
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="skills" class="section">
+            <h1>Technical Skills</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><h4>Programming Skills :</h4></td>
+                        <td><p>Python, SQL</p></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Web Development :</h4></td>
+                        <td><p>HTML, CSS, JavaScript</p></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Frameworks :</h4></td>
+                        <td><p>Django</p></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Version Control :</h4></td>
+                        <td><p>Git</p></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Database :</h4></td>
+                        <td><p>Oracle</p></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Tools & IDE's :</h4></td>
+                        <td><p>VS Code,Pycharm</p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contact" class="section">
+            <h1><i>Membership Users</i></h1>
+            <p>If you are Membership User, please <a href="{% url "login" %}" style="font-size:17px;font-weight:bold;text-align:justify">Login</a> <br>To display the details of Membership Users.</p>
+            <div class="membership-btns">
+                <a href="{% url "signup" %}" class="btn"> Signup</a> 
+                <a href="{% url "login" %}" class="btn"> Login</a>
+            </div>
+            {% comment %} <h2>Contact</h2>
+            <p>Email: nithin279@gmail.com</p>
+            <p>Social: <a href="https://www.linkedin.com/in/dhalavai-nithin-77752633a/">LinkedIn</a> | <a href="https://github.com/Nithinreddy939">GitHub</a></p>
+        </section> {% endcomment %}
+        </div>
+        
+    {% endblock content %}
+    {% include "footer.html" %}
+</body>
+</html>
+
+
+
+ {% comment %} <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>Check out some of my work below:</p>
+            <ul>
+                <li>Project 1 - <a href="#">Live Demo</a></li>
+                <li>Project 2 - <a href="#">Live Demo</a></li>
+                <li>Project 3 - <a href="#">Live Demo</a></li>
+            </ul>
+        </section> {% endcomment %}
+
+        {% comment %} <h4>Programming Skills: Python, SQL</h4>
+            <h4>Web Development: HTML, CSS, JavaScript</h4>
+            <h4>Frameworks: Django</h4>
+            <h4>Version Control: Git</h4>
+            <h4>Database: Oracle</h4>
+            <h4>Tools & IDE's: VS Code,Pycharm</h4> {% endcomment %}

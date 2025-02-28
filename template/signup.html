@@ -1,0 +1,63 @@
+{% extends "index.html" %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "signup-page.css" %}">
+</head>
+<body>
+    <div class="signup">
+        <form action="" method="post">
+            {% csrf_token %}
+            <h1 style="text-align:center;">Signup</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="username">Username :</label></td>
+                        <td><input type="text" name="username" id="username" placeholder="Enter your name" required class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="first_name">first_name :</label></td>
+                        <td><input type="text" name="first_name" id="first_name" placeholder="Enter your first_name" required class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="last_name">last_name :</label></td>
+                        <td><input type="text" name="last_name" id="last_name" placeholder="Enter your last_name" required class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email :</label></td>
+                        <td><input type="email" name="email" id="email" placeholder="Enter your email" required class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password :</label></td>
+                        <td><input type="password" name="password" id="password" placeholder="Enter your password" required class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password2">Confirm Password :</label></td>
+                        <td><input type="password" name="password2" id="password2" placeholder="Re-Enter your password" required class="input"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit" class="signup-btn">Signup</button>
+        </form>
+    </div>
+</body>
+</html>
+
+{% endblock content %}
+
+
+{% comment %} <label for="username">Username :</label>
+            <input type="text" name="username" id="username" placeholder="Enter your name" required><br>
+            <label for="first_name">first_name :</label>
+            <input type="text" name="first_name" id="first_name" placeholder="Enter your first_name" required><br>
+            <label for="last_name">last_name :</label>
+            <input type="text" name="last_name" id="last_name" placeholder="Enter your last_name" required><br>
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required><br>
+            <label for="password">Password :</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required><br>
+            <label for="password2">Confirm Password :</label>
+            <input type="password" name="password2" id="password2" placeholder="Re-Enter your password" required><br> {% endcomment %}

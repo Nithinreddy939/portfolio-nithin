@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="gettingdetails">
+        <div style="text-align: center;">
+            <h1>Fetched the details of that person</h1>
+            <h2>ID: {{data1.id}}</h2>
+            <h2>Username :{{data1.username}}</h2>
+            <h2>Email :{{data1.email}}</h2>
+            <h2>Date of  Join :{{data1.date_joined}}</h2>
+            <h2>Active or Not :{{data1.is_active}}</h2>
+            <h2>Last Login :{{data1.last_login}}</h2>
+        </div>
+    </div>
+
+</body>
+</html>
+{% endblock content %}

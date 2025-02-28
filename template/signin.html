@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+{% block content %}
+{% load static %}
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "signin.css" %}">
+</head>
+<body>
+    <div class="signin">
+        <form action="" method="post">
+            {% csrf_token %}
+            <h1 style="text-align:center">Signin</h1>
+           <table>
+                <tr>
+                     <td><label for="username">Username:</label></td>
+                     <td><input type="text" name="username" id="username" placeholder="Enter your Username" required class="input1"></td>
+                </tr>
+                <tr>
+                     <td><label for="password">Password:</label></td>
+                     <td><input type="password" name="password" id="password" placeholder="Enter your Password" required class="input1"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" class="signin-btn">Signin</button>
+                    </td>
+                </tr>
+           </table>
+           
+        </form>
+    </div>
+</body>
+</html>
+
+{% endblock content %}
