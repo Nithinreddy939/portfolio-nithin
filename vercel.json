@@ -8,6 +8,10 @@
           "runtime": "python3.12" 
         }
       }
+      {
+        "source": "/feedback/((?!general).*)",
+        "destination": "/api/feedback/general"
+      }
     ],
     "routes": [
       {
